@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+
+	<bean id="app" class="br.gov.sp.fatec.App">
+		<property name="multiplicacao" ref="multiplicacao" />
+		<property name="soma" ref="soma" />
+		<property name="number" value="3" />
+	</bean>
+
+	<bean id="multiplicacao" class="br.gov.sp.fatec.Multiplicacao">
+	</bean>
+
+	<bean id="soma" class="br.gov.sp.fatec.Soma">
+	</bean>
+
+	<bean id="produto" class="br.gov.sp.fatec.Produto">
+		<property name="nome" value="achocolatado" />
+		<property name="preco" value="5.99" />
+	</bean>
+</beans>
